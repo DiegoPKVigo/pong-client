@@ -1,0 +1,539 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Game | pong</title>
+	<meta name="description" content="Documentation for pong">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">pong</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_game_.html">&quot;game&quot;</a>
+				</li>
+				<li>
+					<a href="_game_.game.html">Game</a>
+				</li>
+			</ul>
+			<h1>Class Game</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Es el area en el que las partidas tienen lugar.
+						Aquí se encuentra el canvas en el que se dibuja y se guarda todo el estado de la partida.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>export</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Game</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_game_.game.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#ball" class="tsd-kind-icon">ball</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#canvas" class="tsd-kind-icon">canvas</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#firstplayer" class="tsd-kind-icon">first<wbr>Player</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#inputcontroller" class="tsd-kind-icon">input<wbr>Controller</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#resizing" class="tsd-kind-icon">resizing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#score" class="tsd-kind-icon">score</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#secondplayer" class="tsd-kind-icon">second<wbr>Player</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#started" class="tsd-kind-icon">started</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_game_.game.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_game_.game.html#configlisteners" class="tsd-kind-icon">config<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_game_.game.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_game_.game.html#resize" class="tsd-kind-icon">resize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_game_.game.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_game_.game.html#updategamearea" class="tsd-kind-icon">update<wbr>Game<wbr>Area</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Game<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_game_.game.html" class="tsd-signature-type">Game</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in game.ts:41</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Crea el juego.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>Game</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_game_.game.html" class="tsd-signature-type">Game</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ball" class="tsd-anchor"></a>
+					<h3>ball</h3>
+					<div class="tsd-signature tsd-kind-icon">ball<span class="tsd-signature-symbol">:</span> <a href="_ball_.ball.html" class="tsd-signature-type">Ball</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:39</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="canvas" class="tsd-anchor"></a>
+					<h3>canvas</h3>
+					<div class="tsd-signature tsd-kind-icon">canvas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLCanvasElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CanvasRenderingContext2D</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:36</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="firstplayer" class="tsd-anchor"></a>
+					<h3>first<wbr>Player</h3>
+					<div class="tsd-signature tsd-kind-icon">first<wbr>Player<span class="tsd-signature-symbol">:</span> <a href="_player_.player.html" class="tsd-signature-type">Player</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:37</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="inputcontroller" class="tsd-anchor"></a>
+					<h3>input<wbr>Controller</h3>
+					<div class="tsd-signature tsd-kind-icon">input<wbr>Controller<span class="tsd-signature-symbol">:</span> <a href="_input_.keyboardinputcontroller.html" class="tsd-signature-type">KeyboardInputController</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:41</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="resizing" class="tsd-anchor"></a>
+					<h3>resizing</h3>
+					<div class="tsd-signature tsd-kind-icon">resizing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timeout</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:34</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="score" class="tsd-anchor"></a>
+					<h3>score</h3>
+					<div class="tsd-signature tsd-kind-icon">score<span class="tsd-signature-symbol">:</span> <a href="_score_.score.html" class="tsd-signature-type">Score</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:40</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="secondplayer" class="tsd-anchor"></a>
+					<h3>second<wbr>Player</h3>
+					<div class="tsd-signature tsd-kind-icon">second<wbr>Player<span class="tsd-signature-symbol">:</span> <a href="_player_.player.html" class="tsd-signature-type">Player</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:38</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="started" class="tsd-anchor"></a>
+					<h3>started</h3>
+					<div class="tsd-signature tsd-kind-icon">started<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in game.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in game.ts:72</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Limpia el area de juego.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>Game</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="configlisteners" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> config<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">config<wbr>Listeners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in game.ts:134</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Configura los event listeners.
+									Establece la configuración de la redimensión y las entradas del teclado.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>Game</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reset" class="tsd-anchor"></a>
+					<h3>reset</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in game.ts:81</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Restaura el estado por defecto.
+									Restaura los objetos a las propiedades por defecto e inicia una nueva partida.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>Game</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="resize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> resize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">resize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in game.ts:113</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Redimensiona el area de juego.
+										Detiene el juego, lo redimensiona para que ocupe todo el tamaño del area de trabajo del navegador
+									y restaura las propiedades por defecto de los objetos.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>Game</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in game.ts:59</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Inicia el juego.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>Game</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updategamearea" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Game<wbr>Area</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Game<wbr>Area<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in game.ts:163</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Actualiza el area de juego.
+									Redibuja todos los objetos tras limpiar la pantalla. Esta función representa un frame.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>Game</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_ball_.html">&quot;ball&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_config_.html">&quot;config&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_game_.html">&quot;game&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_input_.html">&quot;input&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_player_.html">&quot;player&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_score_.html">&quot;score&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_game_.game.html" class="tsd-kind-icon">Game</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_game_.game.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#ball" class="tsd-kind-icon">ball</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#canvas" class="tsd-kind-icon">canvas</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#firstplayer" class="tsd-kind-icon">first<wbr>Player</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#inputcontroller" class="tsd-kind-icon">input<wbr>Controller</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#resizing" class="tsd-kind-icon">resizing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#score" class="tsd-kind-icon">score</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#secondplayer" class="tsd-kind-icon">second<wbr>Player</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#started" class="tsd-kind-icon">started</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_game_.game.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_game_.game.html#configlisteners" class="tsd-kind-icon">config<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_game_.game.html#reset" class="tsd-kind-icon">reset</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_game_.game.html#resize" class="tsd-kind-icon">resize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_game_.game.html#start" class="tsd-kind-icon">start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_game_.game.html#updategamearea" class="tsd-kind-icon">update<wbr>Game<wbr>Area</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
