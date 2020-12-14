@@ -4,6 +4,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  * @license GPL-3.0
  */
+
 import { Config } from "./config";
 import { Game } from "./game";
 import { Player } from "./player";

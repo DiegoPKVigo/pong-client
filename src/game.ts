@@ -16,9 +16,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+
 import * as $ from "jquery";
 import { Ball } from "./ball";
 import { Config } from "./config";
+import { Connection } from "./connection";
 import { KeyboardInputController } from "./input";
 import { Player } from "./player";
 import { Score } from "./score";
@@ -34,22 +36,26 @@ export class Game {
 	public resizing: NodeJS.Timeout;	// Temporizador para redimensionar el juego
 	public canvas: HTMLCanvasElement;
 	public context: CanvasRenderingContext2D;
+	public connection: Connection;
 	public firstPlayer: Player;
 	public secondPlayer: Player;
 	public ball: Ball;
 	public score: Score;
 	public inputController: KeyboardInputController;
+	public matchId: string;
 
 	/**
 	 * Crea el juego.
 	 * @memberof Game
 	 */
-	constructor() {
+	constructor(connection: Connection) {
+		this.connection = connection;
 		this.canvas = document.createElement("canvas");
 		this.firstPlayer = new Player(this, "rgb(30,142,217)", 30, Config.gameHeight / 2 - 40);
 		this.secondPlayer = new Player(this,"rgb(230, 60, 60)" , Config.gameWidth - 40, Config.gameHeight / 2 - 40);
 		this.ball = new Ball(this, 10);
 		this.score = new Score(this);
+		this.connection.initialize(this);
 		this.start();
 	}
 
@@ -103,6 +109,7 @@ export class Game {
 		}, 500);
 	}
 
+	// TODO Cambiarlo por redimensión en tiempo real, sin pausar la partida.
 	/**
 	 * Redimensiona el area de juego.
 	 * Detiene el juego, lo redimensiona para que ocupe todo el tamaño del area de trabajo del navegador
@@ -146,8 +153,6 @@ export class Game {
 
 			// Tras 300 ms se redimensiona el juego al tamaño de la ventana y entonces se muestra
 			this.resizing = setTimeout((): void => {
-				Config.gameHeight = window.innerHeight;
-				Config.gameWidth = window.innerWidth;
 				this.resize();
 				$(this.canvas).show(300);
 			}, 300);

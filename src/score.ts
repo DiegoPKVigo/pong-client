@@ -4,6 +4,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  * @license GPL-3.0
  */
+
 import { Config } from "./config";
 import { Game } from "./game";
 import { Player } from "./player";
@@ -22,7 +23,7 @@ export class Score {
 	private secondPlayer: Player;
 
 	/**
-	 *Creates la puntuación.
+	* Crea la puntuación.
 	* @param {Game} gameArea - La instancia del juego en la que se dibuja la puntuación.
 	* @memberof Score
 	*/

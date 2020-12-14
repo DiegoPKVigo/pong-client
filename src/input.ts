@@ -4,7 +4,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  * @license GPL-3.0
  */
+
 import { Config } from "./config";
+import { Connection, StatusCodes } from "./connection";
 import { Game } from "./game";
 import { Player } from "./player";
 
@@ -16,6 +18,7 @@ import { Player } from "./player";
  */
 export class KeyboardInputController {
     private keys: Map<string, boolean>;
+    private connection: Connection;
     private gameArea: Game;
     private firstPlayer: Player;
     private secondPlayer: Player;
@@ -23,6 +26,7 @@ export class KeyboardInputController {
     constructor(gameArea: Game) {
         this.keys = new Map();
         this.gameArea = gameArea;
+        this.connection = gameArea.connection;
         this.firstPlayer = gameArea.firstPlayer;
         this.secondPlayer = gameArea.secondPlayer;
         this.initializeInputListeners();
@@ -50,32 +54,12 @@ export class KeyboardInputController {
             } else if (this.keys.get("KeyS")) {
                 this.firstPlayer.speedY = 2;
             }
-
-            if (this.keys.get("ShiftRight") && this.keys.get("ArrowUp")) {
-                this.secondPlayer.speedY = -4;
-            } else if (this.keys.get("ArrowUp")) {
-                this.secondPlayer.speedY = -2;
-            }
-
-            if (this.keys.get("ShiftRight") && this.keys.get("ArrowDown")) {
-                this.secondPlayer.speedY = 4;
-            } else if (this.keys.get("ArrowDown")) {
-                this.secondPlayer.speedY = 2;
-            }
         });
         window.addEventListener("keyup", (event: KeyboardEvent) => {
             this.keys.set(event.code, false);
 
             if (event.code === "ShiftLeft") {
                 this.firstPlayer.speedY /= 2;
-            }
-
-            if (event.code === "ShiftRight") {
-                this.secondPlayer.speedY /= 2;
-            }
-
-            if (!this.keys.get("ArrowUp") && !this.keys.get("ArrowDown")) {
-                this.secondPlayer.speedY = 0;
             }
 
             if (!this.keys.get("KeyW") && !this.keys.get("KeyS")) {
@@ -85,7 +69,7 @@ export class KeyboardInputController {
             if (event.key === "Enter") {
                 if (!this.gameArea.started && this.firstPlayer.score < Config.max_score && this.secondPlayer.score < Config.max_score) {
                     this.gameArea.reset();
-                    this.gameArea.started = true;
+                    this.connection.send(StatusCodes.WAITING);
                 }
             }
         });

@@ -4,6 +4,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  * @license GPL-3.0
  */
+
 import { Game } from "./game";
 
 /**
@@ -75,6 +76,23 @@ export class Player {
 				this.y += this.speedY;
 			}
 		}
+	}
+
+	/**
+	 * Retorna el ID asignado por el servidor para identificar al jugador.
+	 * @memberof Player
+	 */
+	public getId() {
+		return this.id;
+	}
+
+	/**
+	 * Asigna el parámetro id al jugador para que sea identificado por el servidor.
+	 * @memberof Player
+	 * @param {number} id - Es el identificador que será asignado.
+	 */
+	public setId(id: number) {
+		this.id = id;
 	}
 
 	/**

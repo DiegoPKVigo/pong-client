@@ -10,8 +10,9 @@
  * @export
  */
 export const Config = {
-    gameHeight: window.innerHeight, // altura del juego (se corresponde con la altura del área de trabajo del navegador)
-    gameWidth: window.innerWidth,   // anchura del juego (se corresponde con la anchura del área de trabajo del navegador)
+    server: "192.168.0.22",         // dirección en la que se localiza el servidor
+    gameHeight: 720,                // altura del juego (se corresponde con la altura del área de trabajo del navegador)
+    gameWidth: 1280,                // anchura del juego (se corresponde con la anchura del área de trabajo del navegador)
     difficulty: 1,                  // se utiliza para alterar la dificultad del juego aumentando la velocidad de forma exponencial
     max_score: 5	                // puntuación máxima (cuando uno de los dos jugadores la alcance se acaba el juego)
 }
