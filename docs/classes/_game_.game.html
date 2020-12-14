@@ -104,9 +104,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#ball" class="tsd-kind-icon">ball</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#canvas" class="tsd-kind-icon">canvas</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#connection" class="tsd-kind-icon">connection</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#firstplayer" class="tsd-kind-icon">first<wbr>Player</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#inputcontroller" class="tsd-kind-icon">input<wbr>Controller</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#matchid" class="tsd-kind-icon">match<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#resizing" class="tsd-kind-icon">resizing</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#score" class="tsd-kind-icon">score</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_game_.game.html#secondplayer" class="tsd-kind-icon">second<wbr>Player</a></li>
@@ -133,13 +135,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Game<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_game_.game.html" class="tsd-signature-type">Game</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Game<span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><a href="_connection_.connection.html" class="tsd-signature-type">Connection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_game_.game.html" class="tsd-signature-type">Game</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in game.ts:41</li>
+									<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L45">game.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,6 +154,12 @@
 									</dd>
 								</dl>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>connection: <a href="_connection_.connection.html" class="tsd-signature-type">Connection</a></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_game_.game.html" class="tsd-signature-type">Game</a></h4>
 						</li>
 					</ul>
@@ -165,7 +173,7 @@
 					<div class="tsd-signature tsd-kind-icon">ball<span class="tsd-signature-symbol">:</span> <a href="_ball_.ball.html" class="tsd-signature-type">Ball</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:39</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L42">game.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,7 +183,17 @@
 					<div class="tsd-signature tsd-kind-icon">canvas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLCanvasElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:35</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L37">game.ts:37</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="connection" class="tsd-anchor"></a>
+					<h3>connection</h3>
+					<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <a href="_connection_.connection.html" class="tsd-signature-type">Connection</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L39">game.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,7 +203,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CanvasRenderingContext2D</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:36</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L38">game.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">first<wbr>Player<span class="tsd-signature-symbol">:</span> <a href="_player_.player.html" class="tsd-signature-type">Player</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:37</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L40">game.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +223,17 @@
 					<div class="tsd-signature tsd-kind-icon">input<wbr>Controller<span class="tsd-signature-symbol">:</span> <a href="_input_.keyboardinputcontroller.html" class="tsd-signature-type">KeyboardInputController</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:41</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L44">game.ts:44</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="matchid" class="tsd-anchor"></a>
+					<h3>match<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">match<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L45">game.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">resizing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timeout</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:34</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L36">game.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,7 +253,7 @@
 					<div class="tsd-signature tsd-kind-icon">score<span class="tsd-signature-symbol">:</span> <a href="_score_.score.html" class="tsd-signature-type">Score</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:40</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L43">game.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -235,7 +263,7 @@
 					<div class="tsd-signature tsd-kind-icon">second<wbr>Player<span class="tsd-signature-symbol">:</span> <a href="_player_.player.html" class="tsd-signature-type">Player</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:38</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L41">game.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -245,7 +273,7 @@
 					<div class="tsd-signature tsd-kind-icon">started<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in game.ts:33</li>
+							<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L35">game.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -262,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in game.ts:72</li>
+									<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L78">game.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,7 +317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in game.ts:134</li>
+									<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L141">game.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -317,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in game.ts:81</li>
+									<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L87">game.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -345,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in game.ts:113</li>
+									<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L120">game.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -374,7 +402,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in game.ts:59</li>
+									<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L65">game.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -401,7 +429,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in game.ts:163</li>
+									<li>Defined in <a href="https://github.com/DiegoPKVigo/pong-client/blob/be883a9/src/game.ts#L168">game.ts:168</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -433,11 +461,17 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_config_.html">&quot;config&quot;</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_connection_.html">&quot;connection&quot;</a>
+					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/_game_.html">&quot;game&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_input_.html">&quot;input&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_main_.html">&quot;main&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/_player_.html">&quot;player&quot;</a>
@@ -464,6 +498,9 @@
 								<a href="_game_.game.html#canvas" class="tsd-kind-icon">canvas</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#connection" class="tsd-kind-icon">connection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_game_.game.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -471,6 +508,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_game_.game.html#inputcontroller" class="tsd-kind-icon">input<wbr>Controller</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_game_.game.html#matchid" class="tsd-kind-icon">match<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_game_.game.html#resizing" class="tsd-kind-icon">resizing</a>
@@ -523,6 +563,13 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
